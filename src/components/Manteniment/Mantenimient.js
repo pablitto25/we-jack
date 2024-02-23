@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import fondoDesktop from './assests/Web-en-construcción-jackery-desktop.jpg';
-import fondoMobile from './assests/Web-en-construcción-jackery-mobile.jpg';
+import fondoDesktop from './assests/Web-en-construcción-jackery-desktop-sin-boton.jpg';
+import fondoMobile from './assests/Web-en-construcción-jackery-sin-boton.jpg';
 import './Mantenimient.css'
 import { Link } from 'react-router-dom';
 
@@ -19,10 +19,10 @@ const Mantenimiento = () => {
     <div className='containerHome'>
       <div className='containerMantenimientoBody'>
         {/* Imagen de fondo para dispositivos de escritorio */}
-        <Link to='https://jackery.mercadoshops.cl' target='_blank'><img className='fondo' src={fondoDesktop} alt="Fondo de Escritorio" /></Link>
+        <img className='fondo' src={fondoDesktop} alt="Fondo de Escritorio"/>
 
         {/* Imagen de fondo para dispositivos móviles */}
-        <Link to='https://jackery.mercadoshops.cl' target='_blank'><img className='fondo-mobile' src={fondoMobile} alt="Fondo Móvil" /></Link>
+        <img className='fondo-mobile' src={fondoMobile} alt="Fondo Móvil"/>
       </div>
       </div>
   );
