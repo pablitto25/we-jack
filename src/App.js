@@ -12,6 +12,7 @@ import PRODUCTOS6 from './components/Products/Products6.js';
 import PRODUCTOS7 from './components/Products/Products7.js';
 import PRODUCTOS8 from './components/Products/Products8.js';
 import Nota1 from './components/Notas/conocimiento/conocimiento1.js';
+import Manteniment from './components/Manteniment/Mantenimient.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -20,10 +21,11 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-        <NavBar/>
+        {/* <NavBar/> */}
           <Routes>
-          <Route path="/" element={<HOME/>} />
-          <Route path="/Blog/Nota1" element={<Nota1/>} />
+          {/* <Route path="/" element={<HOME/>} /> */}
+          <Route path="/" element={<Manteniment/>} />
+          {/* <Route path="/Blog/Nota1" element={<Nota1/>} />
           <Route path="/HOME" element={<HOME/>} />
           <Route path="/PRODUCTOS" element={<PRODUCTOS/>} />
           <Route path="/PRODUCTOS/Jackery Explorer 240" element={<PRODUCTOS/>} />
@@ -35,7 +37,7 @@ function App() {
           <Route path="/PRODUCTOS/Jackery Generador Solar 500" element={<PRODUCTOS7/>} />
           <Route path="/PRODUCTOS/Jackery Generador Solar 240" element={<PRODUCTOS8/>} />
           <Route path="/Blog" element={<Blog/>} />
-          <Route path="/CONTACTO" element={<Contact/>} />
+          <Route path="/CONTACTO" element={<Contact/>} /> */}
           </Routes>
       </BrowserRouter>
       </div>

@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Gilory Medium';
+    src: url('./fonts/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Gilory Bold';
+    src: url('./fonts/Gilroy-Bold.ttf');
+}
+
+
+.conteiner {
+    display:  flex;
+
+
+}
+
+.conteinerhome {
+    margin: 0 auto; 
+    background-color: transparent;
+  }
+
+
+/*Header*/
+.conteinerHeader {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fd5000;
+}
+
+
+.SliderCards{
+    max-width: 80%;  
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.TexTitle {
+font-family: Gilory Bold;
+color: white;
+font-size: 30px;
+padding-left: 10%;
+padding-top: 2%;
+padding-bottom: 2%;
+
+}
+
+
+
+/*Body*/
+.homeTextTitle {
+    font-family: Gilory Bold;
+    color: black;
+    font-size: 40px; 
+}
+.homeText{
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+
+.conteinerBody{
+    flex: 4; 
+    width: 100%;
+    height: 100%;
+}
+
+.conteinerBody2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+   
+
+}
+
+.conteinerBody21 {
+    padding-top:  100px ;
+    height: 100%vh; 
+    padding-left: 10%;
+    
+
+}
+
+.conteinerBody22 {
+    max-width: 1250px;
+    max-height: 718px;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+}
+.imagenHome{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.conteinerBody3 {
+    display: flex;
+    width: auto;
+    height: 350px;
+    background-image: url('./assests/reseña1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    
+    
+}
+.conteinerBody4 {
+    padding-top: 5%;
+    
+}
+
+
+
+
+.conteinerBody32 {
+    padding: 50px;
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.conteinerBody31{
+    width: 50%;
+     
+    
+}
+
+.conteinerBodyText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+}
+
+.myButtonHome {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 4px 8px; 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #fd5000; 
+    border-radius: 20px; 
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+
+
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 800px) {
+
+    .conteinerHeader {
+     
+        width: 100%;
+        height: 100%;
+        
+    }
+    /*Headers*/
+    .TexTitle{
+        font-size: 20px;
+        padding-left: 5%;
+    }
+
+
+    /*Slioder*/
+ 
+    .conteinerBody2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .conteinerBody21 {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .conteinerBody22{
+        max-width: 1250px;
+        max-height: 2000px;
+        width: 100%;
+        height: auto;
+        overflow: none;
+    }
+
+    .conteinerBody31{
+        width: 50%;
+        height: 30vh; 
+        
+    }
+    .conteinerBody4 {
+        padding-top: 0;
+        justify-content: center;
+        
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+    .conteinerBody21{
+        padding-top: 2px;
+    }
+    .conteinerBody31{
+        width: 50%;
+        height: 10vh; 
+        
+    }
+
+    .conteinerBody32 {
+        width: 50%;
+        height: 10vh;
+    }
+    
+}
+
+
+
+.title-mantenimiento{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.btn-ms{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.img-logo{
+    display: block;
+    text-align: center;
+    
+}
+
+.btn-btn{
+    background-color: rgb(57, 112, 231);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Estilos adicionales para la imagen de fondo móvil */
+  .fondo-mobile {
+    display: none; /* Inicialmente oculto en dispositivos de escritorio */
+  }
+  
+  /* Para dispositivos móviles */
+  @media only screen and (max-width: 680px) {
+    .fondo {
+      display: none; /* Oculta la imagen de fondo de escritorio en dispositivos móviles */
+    }
+  
+    /* Muestra la imagen de fondo móvil */
+    .fondo-mobile {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
